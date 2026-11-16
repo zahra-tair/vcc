@@ -1,0 +1,14 @@
+# Gros fichiers générés ou téléchargés
+*.iso
+*.qcow2
+*.img
+output/*
+!output/.gitkeep
+# Python
+.venv/
+__pycache__/
+# Secrets : ne jamais versionner les clés privées
+*.pem
+tp1_kvm
+id_*
+!id_*.pub

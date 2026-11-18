@@ -1,0 +1,23 @@
+# Inventaire : une entrée par VM à déployer
+vms:
+  - nom: vm_web
+    hostname: web01
+    username: etudiant
+    cpu: 1
+    ram: 1024
+    os: ubuntu
+    profil: web
+  - nom: vm_db
+    hostname: db01
+    username: etudiant
+    cpu: 1
+    ram: 1024
+    os: ubuntu
+    profil: database
+  - nom: vm_admin
+    hostname: admin01
+    username: etudiant
+    cpu: 1
+    ram: 1024
+    os: ubuntu
+    profil: admin

@@ -2,8 +2,8 @@
 *.iso
 *.qcow2
 *.img
-output/*
-!output/.gitkeep
+**/output/*
+!**/output/.gitkeep
 # Python
 .venv/
 __pycache__/
@@ -12,3 +12,4 @@ __pycache__/
 tp1_kvm
 id_*
 !id_*.pub
+bd2c_tp2

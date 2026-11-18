@@ -1,0 +1,22 @@
+#cloud-config
+hostname: web01
+manage_etc_hosts: true
+users:
+  - default
+  - name: etudiant
+    shell: /bin/bash
+    groups: [sudo]
+    sudo: "ALL=(ALL) NOPASSWD:ALL"
+    lock_passwd: true
+    ssh_authorized_keys:
+      - ssh-ed25519 VOTRE_CLE_PUBLIQUE
+ssh_pwauth: false
+package_update: true
+packages:
+  - nginx
+write_files:
+  - path: /etc/motd
+    content: |
+      VM vm_web - role web
+runcmd:
+  - systemctl enable --now nginx

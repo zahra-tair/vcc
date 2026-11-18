@@ -1,0 +1,5 @@
+# Profil serveur de base de données
+packages:
+  - mariadb-server
+service: mariadb
+role: db

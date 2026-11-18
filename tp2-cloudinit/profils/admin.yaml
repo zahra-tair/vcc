@@ -1,0 +1,5 @@
+# Profil machine d'administration
+packages:
+  - htop
+service: ssh
+role: admin

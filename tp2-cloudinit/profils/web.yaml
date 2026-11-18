@@ -1,0 +1,5 @@
+# Profil serveur web
+packages:
+  - nginx
+service: nginx
+role: web
